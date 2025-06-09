@@ -1,0 +1,79 @@
+@import url("/style/button.css");
+
+/* Общие х-ки кнопко */
+.btn {
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid var(--color-border);
+  gap: 6px;
+  text-wrap: nowrap;
+  font-size: 18px;
+  line-height: 98%;
+}
+
+/* Серая кнопка в меню */
+.btn:hover {
+  background-color: var(--color-hover);
+}
+
+.btn-standard {
+  background-color: var(--color-bg-2);
+}
+/* Зеленая кнопка в меню */
+.btn-green {
+  background-color: var(--color-bg-3);
+  color: var(--color-primary);
+  border: none;
+}
+.btn-green:hover {
+  background-color: var(--color-hover--green);
+}
+
+.btn-dark-green {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}
+.btn-dark-green:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Кнопки в меню */
+.btn-s {
+  padding: 12px 24px;
+}
+
+/* Кнопки  */
+.btn-m {
+  padding: 24px 78px;
+}
+
+/* Добавить в корзину */
+.btn-l {
+  padding: 24px 118px;
+}
+
+.btn-uniq {
+  padding: 24px 0px;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 992px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
+@media (max-width: 375px) {
+}
+@media (max-width: 834px) {
+}
+@media (max-width: 402px) {
+}

@@ -1,0 +1,127 @@
+.section-contact {
+  display: flex;
+  gap: 24px;
+  flex: 1 1 auto;
+  justify-content: space-between;
+}
+
+.section-contact.container {
+  max-width: 100%;
+  padding: 24px;
+}
+
+.contact-card {
+  border-radius: 25px;
+  padding: 48px;
+  flex: 1 1 auto;
+  max-width: 50%;
+  min-height: 652px;
+}
+
+.contact-card__annotation {
+  background-color: #03011a;
+}
+.contact-card__contacts {
+  background-color: #059e82;
+}
+.contact-card__subtitle--accent {
+  color: #d4ff66;
+}
+.contact-card--on-light {
+  color: #ffffff;
+}
+.contact-card--on-dark {
+  color: #d5fff8;
+}
+
+.contact-card__contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-card__contact:not(:last-child) {
+  margin-bottom: 48px;
+}
+.contact-card__title {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 98%;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.contact-card__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* 
+ 'mobile': 375, 
+ 'mobile-xl': 480, 
+ 'tablet': 768, 
+ 'tablet-xl': 992, 
+ 'laptop': 1024, 
+ 'laptop-xl': 1280, 
+ 'laptop-xxl': 1440, 
+ 'container': 1295, 
+ 'pc': 1600)
+ */
+
+@media (max-width: 1600px) {
+  .contact-card {
+    min-height: 452px;
+  }
+  .contact-card__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1280px) {
+  .section-contact {
+    gap: 20px;
+  }
+  .contact-card {
+    min-height: 260px;
+  }
+  .contact-card__title {
+    font-size: 26px;
+  }
+  .contact-card__subtitle {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .section-contact {
+    flex-wrap: wrap;
+    /* flex: 1 1 auto; */
+  }
+  .section-contact.container {
+    max-width: 100%;
+    padding: 0px 36px;
+  }
+  .contact-card {
+    border-radius: 15px;
+    padding: 18px;
+    max-width: 100%;
+    min-height: 176px;
+  }
+  .contact-card__contacts .contact-card__title {
+    font-size: 26px;
+    margin-top: 12px;
+  }
+  .contact-card__contact:not(:last-child) {
+    margin-bottom: 36px;
+  }
+  .contact-card--on-light:nth-child(1) {
+    order: 2;
+  }
+}
+@media (max-width: 420px) {
+  .section-contact.container {
+    padding: 36px 18px;
+  }
+  .contact-card__contacts .contact-card__title {
+    font-size: 22px;
+  }
+  .contact-card__subtitle {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,558 @@
+@import url("/style/index.css");
+
+/* ОБЩИЕ СТИЛИ */
+body {
+  background-color: #ffffff;
+  min-height: 100%;
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-txt);
+}
+button {
+  background: none;
+}
+.container {
+  max-width: calc(1464px + (132px * 2));
+  margin: 0 auto;
+  padding: 0px 132px;
+}
+
+.section {
+  margin-top: 96px;
+}
+
+.text-dark {
+  color: var(--color-txt);
+}
+
+.text-green {
+  color: var(--color-primary);
+}
+.link {
+  color: var(--color-link);
+  transition: all 0.3s ease;
+}
+.link:hover {
+  color: var(--color-link--hover);
+}
+
+/* ШАПКА */
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+/* разобраться с адаптацией логотипа */
+.logo-img {
+  width: 101px;
+  height: 80px;
+  aspect-ratio: 53/42;
+}
+
+.navigation {
+  padding: 0px 20px;
+}
+
+/* что делать с переполнением меню (скрол, врап...) */
+.header-menu {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 24px;
+}
+
+.header__btn {
+  width: 28px;
+  height: 28px;
+  background: none;
+}
+
+.burger-btn {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  z-index: 110;
+  display: none;
+  cursor: pointer;
+}
+
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-txt);
+  transition: 0.3s ease-in-out;
+  position: absolute;
+}
+
+.burger__line:nth-child(1) {
+  top: 0;
+}
+.burger__line:nth-child(2) {
+  top: 10px;
+}
+.burger__line:nth-child(3) {
+  top: 10px;
+}
+.burger__line:nth-child(4) {
+  top: 20px;
+}
+/* 
+ 'mobile': 375, 
+ 'mobile-xl': 480, 
+ 'tablet': 768, 
+ 'tablet-xl': 992, 
+ 'laptop': 1024, 
+ 'laptop-xl': 1280, 
+ 'laptop-xxl': 1440, 
+ 'container': 1295, 
+ 'pc': 1600)
+ */
+@media (max-width: 1200px) {
+  .container {
+    max-width: calc(1464px + (36px * 2));
+    padding: 0px 36px;
+  }
+  .header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .header-menu {
+    gap: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .text-green {
+    font-weight: 400;
+  }
+}
+@media (max-width: 992px) {
+  .header-menu {
+    display: none;
+  }
+  .controls {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+  .logo-img {
+    width: 53px;
+    height: 42px;
+  }
+  .section {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+  .section {
+    margin-top: 36px;
+  }
+}
+@media (max-width: 375px) {
+}
+
+@media (max-width: 834px) {
+}
+
+@media (max-width: 420px) {
+  .container {
+    max-width: calc(1464px + (18px * 2));
+
+    padding: 0px 18px;
+  }
+  .header {
+    padding-top: 18px;
+  }
+  .text-green {
+    font-weight: 900;
+  }
+}
+
+/* SECTION - 1 */
+.banner {
+  max-width: 1464px;
+  height: 762px;
+  border: 5px solid #e6e6e6;
+  border-radius: 15px;
+  position: relative;
+}
+
+.banner__btn {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 834px) {
+}
+@media (max-width: 420px) {
+}
+
+/* SECTION 2 */
+.section-natural-cosmetics__content {
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+}
+
+.section-natural-cosmetics__subtitle {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 98%;
+  text-transform: uppercase;
+
+  grid-area: 1 / 2 / 2 / 5;
+  max-width: 527px;
+}
+
+.section-natural-cosmetics__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  grid-area: 1 / 5 / 2 / 7;
+}
+
+.section-natural-cosmetics__row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 24px;
+}
+
+/* .section-natural-cosmetics__row:not(:last-child) {
+  margin-bottom: 105px;
+} */
+
+@media (max-width: 1200px) {
+  .section-natural-cosmetics__row {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+  }
+
+  .section-natural-cosmetics__subtitle {
+    grid-area: 1 / 1 / 2 / 5;
+    max-width: 295px;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .section-natural-cosmetics__subtitle svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .section-natural-cosmetics__description {
+    grid-area: 1 / 5 / 2 / 9;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .section-natural-cosmetics__content {
+    gap: 44px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-natural-cosmetics__row {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .section-natural-cosmetics__subtitle {
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .section-natural-cosmetics__subtitle svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .section-natural-cosmetics__row {
+    padding: 18px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 321px;
+  }
+  .section-natural-cosmetics__description {
+    font-size: 12px;
+  }
+  .row_1 {
+    background-color: #d5fff8;
+  }
+  .row_2 {
+    background-color: #03011a;
+  }
+  .row_2 .section-natural-cosmetics__description {
+    color: #d5fff8;
+  }
+  .row_2 .section-natural-cosmetics__subtitle {
+    color: #d5fff8;
+  }
+  .accent {
+    color: #d4ff66;
+  }
+}
+
+/* SECTION 3 */
+
+.section-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.advantages__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+.advantages__col--text {
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+  min-height: 321px;
+  border-radius: 15px;
+  padding: 22px;
+}
+.advantage__title {
+  font-weight: 600;
+  font-size: 50px;
+  color: var(--color-txt);
+  text-transform: uppercase;
+  line-height: 98%;
+  padding-bottom: 10px;
+}
+.advantage__subtitle {
+  font-weight: 400;
+  color: var(--color-txt);
+  line-height: 150%;
+}
+.advantage--image {
+  width: 100%;
+  height: 321px;
+  background: none;
+  padding: 0;
+}
+.advantage__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid #b6b6b6;
+}
+
+/* Мобильная версия  */
+.advantages-mobile {
+  display: none;
+}
+.advantages-mobile.container {
+  width: 100%;
+  padding: 0px 18px;
+  background-color: #ededed;
+  border-radius: 25px;
+}
+.advantages-mobile__palte {
+  padding: 36px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.advantages-mobile__palte:not(:last-child) {
+  border-bottom: 1px solid #b6b6b6;
+}
+
+.advantages-mobile__title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 98%;
+  text-transform: uppercase;
+}
+.advantages-mobile__description {
+  font-size: 12px;
+}
+.advantages-mobile__icon {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1200px) {
+  .advantage {
+    min-height: 212px;
+  }
+  .advantage__title {
+    font-size: 28px;
+  }
+  .advantage__subtitle {
+    font-size: 14px;
+  }
+  .advantage__number {
+    font-size: 54px;
+  }
+  .advantage__description {
+    font-size: 14px;
+  }
+  .advantage--image {
+    height: 212px;
+  }
+}
+
+@media (max-width: 540px) {
+  .section-advantages {
+    display: none;
+  }
+
+  .advantages-mobile {
+    display: block;
+  }
+}
+
+/* SECTION 4 */
+
+.products__btn {
+  margin-top: 96px;
+  text-align: center;
+}
+
+.swiper-slide {
+  max-width: 348px;
+  margin-right: 24px;
+}
+.swiper-wrapper {
+  display: flex; /* Используем Flexbox для горизонтального размещения слайдов */
+  width: max-content; /* Ширина обертки зависит от содержимого */
+}
+
+.swiper-slide {
+  flex-shrink: 0; /* Запрещаем сжатие слайдов */
+  width: auto; /* Ширина слайда определяется его содержимым */
+}
+
+@media (max-width: 1200px) {
+  .section-products {
+    padding-left: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .products__btn {
+    display: none;
+  }
+}
+
+/* SECTION 5 */
+
+.feadbacks__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 96px;
+}
+.feadback {
+  padding: 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 720px;
+  border-radius: 25px;
+  background-color: #ededed;
+}
+.feadback__top {
+  display: flex;
+  gap: 22px;
+}
+.feadback__author {
+  font-size: 24;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.feadback__date {
+  color: #b6b6b6;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 400;
+}
+.feadback__text {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .feadbacks__container {
+    gap: 20px;
+  }
+  .feadback {
+    padding: 36px;
+    gap: 12px;
+    border-radius: 15px;
+    padding: 34px;
+  }
+  .feadback__text {
+    font-size: 14px;
+  }
+  .feadback__date {
+    font-size: 14px;
+  }
+  .feadback__author {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-feadback {
+    background-color: var(--color-bg-2);
+    border-radius: 25px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .feadback {
+    background-color: var(--color-bg);
+  }
+}
+
+@media (max-width: 520px) {
+  .feadbacks__container {
+    margin-top: 56px;
+  }
+  .feadback:nth-child(even) {
+    display: none;
+  }
+
+  .feadbacks__container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-feadback {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
