@@ -1,20 +1,20 @@
 @font-face {
   font-family: Manrope;
-  src: url("/fonts/Manrope-Medium.woff2");
+  src: url("../fonts/Manrope-Medium.woff2");
   font-weight: 400;
 }
 @font-face {
   font-family: Manrope;
-  src: url("/fonts/Manrope-ExtraBold.woff2");
+  src: url("../fonts/Manrope-ExtraBold.woff2");
   font-weight: 900;
 }
 @font-face {
   font-family: Manrope;
-  src: url("/fonts/Manrope-Bold.woff2");
+  src: url("../fonts/Manrope-Bold.woff2");
   font-weight: 600;
 }
 @font-face {
   font-family: Manrope;
-  src: url("/fonts/Manrope-SemiBold.woff2");
+  src: url("../fonts/Manrope-SemiBold.woff2");
   font-weight: 500;
 }
