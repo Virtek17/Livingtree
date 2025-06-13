@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="swiper.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-container">
+        <a href="index.html" class="logo"
+          ><img class="logo-img" src="images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul class="header-menu">
+          <li>
+            <a class="btn btn-standard btn-s" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="btn btn-standard btn-s" href="#">Доставка и оплата</a>
+          </li>
+          <li><a class="btn btn-standard btn-s" href="#">Контакты</a></li>
+          <li>
+            <a class="btn btn-green btn-s" href="#">+7(951)234-44-80</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="header__btn">
+          <img src="images/icons/Account.svg" alt="profile" />
+        </button>
+        <button class="header__btn">
+          <img src="images/icons/Cart.svg" alt="cart" />
+        </button>
+      </div>
+      <div class="burger-btn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section container">
+        <div class="order-placed">
+          <div class="result-message">
+            <h2>Заказ оформлен</h2>
+            <div class="result-message__description">
+              <p>
+                На вашу почту
+                <a class="link--green" href="#">adress@mail.com</a> была
+                отправлена информация о заказе. Вы также можете отследить ваш
+                заказ в личном кабинете.
+              </p>
+              <br />
+              <p>Спасибо за покупку!</p>
+            </div>
+
+            <div class="order-banner--mobile">
+              <div class="order-banner__header">
+                <div class="order-banner__header--info">
+                  <div class="order-banner__title">Заказ №100428</div>
+                  <div class="order-banner__date">18 мая 17:05</div>
+                </div>
+                <div class="label-txt label--yellow">В обработке</div>
+              </div>
+              <div class="order-banner__main">
+                <div class="order-product-slider">
+                  <div class="swiper swiper-order-banner">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img">
+                            <img
+                              class="product-img"
+                              src="images/products/prod-2.png"
+                              alt="гель"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img">
+                            <img
+                              class="product-img"
+                              src="images/products/prod-2.png"
+                              alt="гель"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img">
+                            <img
+                              class="product-img"
+                              src="images/products/prod-2.png"
+                              alt="гель"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="order-banner__footer">
+                <div>К оплате</div>
+                <div>2350 ₽</div>
+              </div>
+            </div>
+
+            <div class="btn-row">
+              <button class="btn btn-standard btn-uniq">
+                Вернуться к покупкам<svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.5625 20.125H9.97172C9.56189 20.1249 9.16508 19.981 8.85047 19.7184C8.53586 19.4558 8.32341 19.091 8.25016 18.6878L5.32984 2.625H2.625"
+                    stroke="#03011A"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.0625 24.5C11.2706 24.5 12.25 23.5206 12.25 22.3125C12.25 21.1044 11.2706 20.125 10.0625 20.125C8.85438 20.125 7.875 21.1044 7.875 22.3125C7.875 23.5206 8.85438 24.5 10.0625 24.5Z"
+                    stroke="#03011A"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20.5625 24.5C21.7706 24.5 22.75 23.5206 22.75 22.3125C22.75 21.1044 21.7706 20.125 20.5625 20.125C19.3544 20.125 18.375 21.1044 18.375 22.3125C18.375 23.5206 19.3544 24.5 20.5625 24.5Z"
+                    stroke="#03011A"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M7.71641 15.75H21.4484C21.8583 15.7499 22.2551 15.606 22.5697 15.3434C22.8843 15.0808 23.0967 14.716 23.17 14.3128L24.5 7H6.125"
+                    stroke="#03011A"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="btn btn-dark-green btn-uniq">
+                Отследить заказ<svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 15C12.4518 15 15.25 12.2018 15.25 8.75C15.25 5.29822 12.4518 2.5 9 2.5C5.54822 2.5 2.75 5.29822 2.75 8.75C2.75 12.2018 5.54822 15 9 15Z"
+                    stroke="#D4FF66"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.4199 13.1694L17.7504 17.4999"
+                    stroke="#D4FF66"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="order-placed__info">
+            <h2>Заказ <span class="text-green">№100428</span></h2>
+            <div class="preview-product-slider">
+              <div class="swiper swiper-preview-done">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img
+                          class="product-img"
+                          src="images/products/prod-2.png"
+                          alt="гель"
+                        />
+                      </div>
+
+                      <div class="product-card__labels">
+                        <div class="label label--greeen">
+                          Уход для тела
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="label-mobile label-mobile--green">
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__name">
+                          крем-мыло <br />
+                          для лица и тела
+                        </div>
+
+                        <div class="product-card__info">
+                          <div class="product-card__price">500₽</div>
+                          <div class="product-card__value">1 шт.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img
+                          class="product-img"
+                          src="images/products/prod-2.png"
+                          alt="гель"
+                        />
+                      </div>
+
+                      <div class="product-card__labels">
+                        <div class="label label--greeen">
+                          Уход для тела
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="label-mobile label-mobile--green">
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__name">
+                          крем-мыло <br />
+                          для лица и тела
+                        </div>
+
+                        <div class="product-card__info">
+                          <div class="product-card__price">500₽</div>
+                          <div class="product-card__value">1 шт.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img
+                          class="product-img"
+                          src="images/products/prod-2.png"
+                          alt="гель"
+                        />
+                      </div>
+
+                      <div class="product-card__labels">
+                        <div class="label label--greeen">
+                          Уход для тела
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="label-mobile label-mobile--green">
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__name">
+                          крем-мыло <br />
+                          для лица и тела
+                        </div>
+
+                        <div class="product-card__info">
+                          <div class="product-card__price">500₽</div>
+                          <div class="product-card__value">1 шт.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact container">
+        <div class="contact-card contact-card__annotation">
+          <div class="contact-card__title contact-card--on-dark">
+            ОТВЕТИМ На ваши вопросы
+          </div>
+          <div class="contact-card__subtitle contact-card--on-dark">
+            Не нашли нужной информации или хотите уточнить детали? Напишите нам
+            — мы с радостью поможем.
+          </div>
+        </div>
+
+        <div class="contact-card contact-card__contacts">
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              +7(951)234-44-80
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              Телефон
+            </div>
+          </div>
+
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              mail@zhd-chel.ru
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              E-mail
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class=".footer-menu copyright">
+        <div class="copyright-date">© 2025</div>
+        <div>Живое дерево</div>
+      </div>
+      <ul class="footer-menu menu-first">
+        <li class="footer-menu__title">Информация</li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Конфиденциальность</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Документы</a>
+        </li>
+        <li class="footer-menu__item"><a class="link" href="#">Контакты</a></li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Контакты</li>
+        <li class="footer-menu__item">
+          <div class="footer-menu__item--contacts">
+            <a class="link" href="#">VlasovAA@list.ru</a>
+            <a class="link" href="#">+7(951)234-44-80</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Реквизиты</li>
+        <li class="footer-menu__item">
+          <a href="#">ИП Власов Андрей Александрович</a>
+        </li>
+        <li class="footer-menu__item">
+          <a href="#">ИНН/КПП: 744700520166</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="input.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-container">
+        <a class="link--green" href="index.html" class="logo"
+          ><img class="logo-img" src="images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul class="header-menu">
+          <li>
+            <a class="btn btn-standard btn-s" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="btn btn-standard btn-s" href="#">Доставка и оплата</a>
+          </li>
+          <li><a class="btn btn-standard btn-s" href="#">Контакты</a></li>
+          <li>
+            <a class="btn btn-green btn-s" href="#">+7(951)234-44-80</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="header__btn">
+          <img src="images/icons/Account.svg" alt="profile" />
+        </button>
+        <button class="header__btn">
+          <img src="images/icons/Cart.svg" alt="cart" />
+        </button>
+      </div>
+      <div class="burger-btn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section section-auth container">
+        <div class="login-registration-form">
+          <h2 class="login-registration-form__title">добро пожаловать</h2>
+          <p class="login-registration-form__subtitle">
+            Создайте аккаунт или войдите, чтобы отслеживать заказы и сохранять
+            адреса доставки.
+          </p>
+
+          <div class="login-registration-form__main">
+            <div class="tabs">
+              <button class="tab__item tab__item--active">вход</button>
+              <button class="tab__item">регистрация</button>
+            </div>
+            <div class="tab-content tab-login show" id="content-1">
+              <div class="input-group">
+                <label class="input__label" for="phone"
+                  >Телефон
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input phone-input"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="+7(000)000-00-00"
+                />
+              </div>
+
+              <div class="login-registration-form__terms">
+                <div>
+                  <svg
+                    width="28"
+                    height="29"
+                    viewBox="0 0 28 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 25C19.799 25 24.5 20.299 24.5 14.5C24.5 8.70101 19.799 4 14 4C8.20101 4 3.5 8.70101 3.5 14.5C3.5 20.299 8.20101 25 14 25Z"
+                      stroke="#B6B6B6"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M14 15.375V9.25"
+                      stroke="#B6B6B6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 20.625C14.7249 20.625 15.3125 20.0374 15.3125 19.3125C15.3125 18.5876 14.7249 18 14 18C13.2751 18 12.6875 18.5876 12.6875 19.3125C12.6875 20.0374 13.2751 20.625 14 20.625Z"
+                      fill="#B6B6B6"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  Продолжая авторизацию, Вы соглашаетесь с
+                  <a class="link--green" href="#"
+                    >политикой конфиденциальности</a
+                  >
+                  и
+                  <a class="link--green" href="#"
+                    >Пользовательским соглашением</a
+                  >
+                </p>
+              </div>
+
+              <button
+                class="login-registration-form__button btn btn-dark-green btn-uniq"
+              >
+                Отправить sms код
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2308_4162)">
+                    <path
+                      d="M10.5 9.8125C10.6036 9.8125 10.6875 9.89645 10.6875 10C10.6875 10.1036 10.6036 10.1875 10.5 10.1875C10.3964 10.1875 10.3125 10.1036 10.3125 10C10.3125 9.89645 10.3964 9.8125 10.5 9.8125Z"
+                      fill="#D4FF66"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M7.0625 9.8125C7.16605 9.8125 7.25 9.89645 7.25 10C7.25 10.1036 7.16605 10.1875 7.0625 10.1875C6.95895 10.1875 6.875 10.1036 6.875 10C6.875 9.89645 6.95895 9.8125 7.0625 9.8125Z"
+                      fill="#D4FF66"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M13.9375 10.9375C14.4553 10.9375 14.875 10.5178 14.875 10C14.875 9.48223 14.4553 9.0625 13.9375 9.0625C13.4197 9.0625 13 9.48223 13 10C13 10.5178 13.4197 10.9375 13.9375 10.9375Z"
+                      fill="#D4FF66"
+                    />
+                    <path
+                      d="M4.02734 17.9773C3.93631 18.0539 3.82531 18.1029 3.70739 18.1186C3.58947 18.1343 3.46952 18.116 3.36164 18.0659C3.25376 18.0157 3.16242 17.9359 3.09836 17.8356C3.0343 17.7354 3.00018 17.619 3 17.5V5C3 4.83424 3.06585 4.67527 3.18306 4.55806C3.30027 4.44085 3.45924 4.375 3.625 4.375H17.375C17.5408 4.375 17.6997 4.44085 17.8169 4.55806C17.9342 4.67527 18 4.83424 18 5V15C18 15.1658 17.9342 15.3247 17.8169 15.4419C17.6997 15.5592 17.5408 15.625 17.375 15.625H6.75L4.02734 17.9773Z"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2308_4162">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+
+            <div class="tab-content tab-reg hide" id="content-2">
+              <div class="input-group">
+                <label class="input__label" for="name"
+                  >Имя
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Имя"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="lastName"
+                  >Фамилия
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Фамилия"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="mail"
+                  >E-mail
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="email"
+                  name="mail"
+                  id="email"
+                  placeholder="adress@example.com"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="phone"
+                  >Телефон
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input phone-input"
+                  type="text"
+                  name="phone"
+                  id="phone2"
+                  placeholder="+7(000)000-00-00"
+                />
+              </div>
+              <div class="login-registration-form__terms">
+                <div>
+                  <svg
+                    width="28"
+                    height="29"
+                    viewBox="0 0 28 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 25C19.799 25 24.5 20.299 24.5 14.5C24.5 8.70101 19.799 4 14 4C8.20101 4 3.5 8.70101 3.5 14.5C3.5 20.299 8.20101 25 14 25Z"
+                      stroke="#B6B6B6"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      d="M14 15.375V9.25"
+                      stroke="#B6B6B6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 20.625C14.7249 20.625 15.3125 20.0374 15.3125 19.3125C15.3125 18.5876 14.7249 18 14 18C13.2751 18 12.6875 18.5876 12.6875 19.3125C12.6875 20.0374 13.2751 20.625 14 20.625Z"
+                      fill="#B6B6B6"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  Продолжая авторизацию, Вы соглашаетесь с
+                  <a class="link--green" href="#"
+                    >политикой конфиденциальности</a
+                  >
+                  и
+                  <a class="link--green" href="#"
+                    >Пользовательским соглашением</a
+                  >
+                </p>
+              </div>
+              <button
+                class="login-registration-form__button btn btn-dark-green btn-uniq"
+              >
+                Отправить sms код
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2308_4162)">
+                    <path
+                      d="M10.5 9.8125C10.6036 9.8125 10.6875 9.89645 10.6875 10C10.6875 10.1036 10.6036 10.1875 10.5 10.1875C10.3964 10.1875 10.3125 10.1036 10.3125 10C10.3125 9.89645 10.3964 9.8125 10.5 9.8125Z"
+                      fill="#D4FF66"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M7.0625 9.8125C7.16605 9.8125 7.25 9.89645 7.25 10C7.25 10.1036 7.16605 10.1875 7.0625 10.1875C6.95895 10.1875 6.875 10.1036 6.875 10C6.875 9.89645 6.95895 9.8125 7.0625 9.8125Z"
+                      fill="#D4FF66"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M13.9375 10.9375C14.4553 10.9375 14.875 10.5178 14.875 10C14.875 9.48223 14.4553 9.0625 13.9375 9.0625C13.4197 9.0625 13 9.48223 13 10C13 10.5178 13.4197 10.9375 13.9375 10.9375Z"
+                      fill="#D4FF66"
+                    />
+                    <path
+                      d="M4.02734 17.9773C3.93631 18.0539 3.82531 18.1029 3.70739 18.1186C3.58947 18.1343 3.46952 18.116 3.36164 18.0659C3.25376 18.0157 3.16242 17.9359 3.09836 17.8356C3.0343 17.7354 3.00018 17.619 3 17.5V5C3 4.83424 3.06585 4.67527 3.18306 4.55806C3.30027 4.44085 3.45924 4.375 3.625 4.375H17.375C17.5408 4.375 17.6997 4.44085 17.8169 4.55806C17.9342 4.67527 18 4.83424 18 5V15C18 15.1658 17.9342 15.3247 17.8169 15.4419C17.6997 15.5592 17.5408 15.625 17.375 15.625H6.75L4.02734 17.9773Z"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2308_4162">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact container">
+        <div class="contact-card contact-card__annotation">
+          <div class="contact-card__title contact-card--on-dark">
+            ОТВЕТИМ На ваши вопросы
+          </div>
+          <div class="contact-card__subtitle contact-card--on-dark">
+            Не нашли нужной информации или хотите уточнить детали? Напишите нам
+            — мы с радостью поможем.
+          </div>
+        </div>
+
+        <div class="contact-card contact-card__contacts">
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              +7(951)234-44-80
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              Телефон
+            </div>
+          </div>
+
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              mail@zhd-chel.ru
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              E-mail
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class=".footer-menu copyright">
+        <div class="copyright-date">© 2025</div>
+        <div>Живое дерево</div>
+      </div>
+      <ul class="footer-menu menu-first">
+        <li class="footer-menu__title">Информация</li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Конфиденциальность</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Документы</a>
+        </li>
+        <li class="footer-menu__item"><a class="link" href="#">Контакты</a></li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Контакты</li>
+        <li class="footer-menu__item">
+          <div class="footer-menu__item--contacts">
+            <a class="link" href="#">VlasovAA@list.ru</a>
+            <a class="link" href="#">+7(951)234-44-80</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Реквизиты</li>
+        <li class="footer-menu__item">ИП Власов Андрей Александрович</li>
+        <li class="footer-menu__item">ИНН/КПП: 744700520166</li>
+      </ul>
+    </footer>
+  </body>
+</html>

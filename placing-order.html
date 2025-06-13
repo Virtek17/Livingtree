@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="tabs.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="input.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="swiper.js" defer></script>
+    <title>Оформление заказа</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-container">
+        <a class="link--green" href="index.html" class="logo"
+          ><img class="logo-img" src="images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul class="header-menu">
+          <li>
+            <a class="btn btn-standard btn-s" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="btn btn-standard btn-s" href="#">Доставка и оплата</a>
+          </li>
+          <li><a class="btn btn-standard btn-s" href="#">Контакты</a></li>
+          <li>
+            <a class="btn btn-green btn-s" href="#">+7(951)234-44-80</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="header__btn">
+          <img src="images/icons/Account.svg" alt="profile" />
+        </button>
+        <button class="header__btn">
+          <img src="images/icons/Cart.svg" alt="cart" />
+        </button>
+      </div>
+      <div class="burger-btn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section container">
+        <h2>Оформление заказа</h2>
+        <div class="placing-order">
+          <div class="placing-order__col-1">
+            <div>
+              <h4>информация о получателе</h4>
+              <div class="inputs-group__4">
+                <div class="input-group">
+                  <label class="input__label" for="name"
+                    >Имя
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 1.875V10.125"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 3.75L9.75 8.25"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 8.25L9.75 3.75"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Имя"
+                  />
+                </div>
+                <div class="input-group">
+                  <label class="input__label" for="lastName"
+                    >Фамилия
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 1.875V10.125"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 3.75L9.75 8.25"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 8.25L9.75 3.75"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="input"
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    placeholder="Фамилия"
+                  />
+                </div>
+                <div class="input-group">
+                  <label class="input__label" for="email"
+                    >E-mail
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 1.875V10.125"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 3.75L9.75 8.25"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 8.25L9.75 3.75"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="adress@example.com"
+                  />
+                </div>
+                <div class="input-group">
+                  <label class="input__label" for="phone"
+                    >Телефон
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 1.875V10.125"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 3.75L9.75 8.25"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2.25 8.25L9.75 3.75"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </label>
+                  <input
+                    class="input phone-input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder="+7(___)___-__-__"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4>Способ доставки</h4>
+              <div class="tabs">
+                <div class="tab__item tab__item--active">Самовывоз</div>
+                <div class="tab__item">курьером</div>
+              </div>
+              <div class="tab-content show" id="content-4">
+                <div class="placing__btns">
+                  <button class="placing-btn">
+                    <div class="placing-btn__title">Яндекс- доставка</div>
+                    <p class="placing-btn__subtitle">Пункт выдачи / постомат</p>
+                  </button>
+                  <button class="placing-btn">
+                    <div class="placing-btn__title">Сдэк</div>
+                    <p class="placing-btn__subtitle">Пункт выдачи / постомат</p>
+                  </button>
+                </div>
+
+                <h4>Адрес доставки</h4>
+                <div class="inputs-group__3">
+                  <div class="input-group">
+                    <label class="input__label" for="name"
+                      >Страна
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Россия"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="name"
+                      >Регион / область
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="region"
+                      id="region"
+                      placeholder="Выбрать из списка"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="name"
+                      >Пункт выдачи
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="postomat"
+                      id="postomat"
+                      placeholder="Выбрать из списка"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-content hide" id="content-5">
+                <div class="placing__btns">
+                  <button class="placing-btn">
+                    <div class="placing-btn__title">Сдэк</div>
+                    <p class="placing-btn__subtitle">
+                      Курьер привезет ваш заказ до двери
+                    </p>
+                  </button>
+                </div>
+                <h4>Адрес доставки</h4>
+                <div class="inputs-group__4">
+                  <div class="input-group">
+                    <label class="input__label" for="country"
+                      >Страна
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="country"
+                      id="country"
+                      placeholder="Россия"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="region"
+                      >Регион / область
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="region"
+                      id="region"
+                      placeholder="Выбрать из списка"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="city"
+                      >Город/населённый пункт
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="Выбрать из списка"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="street"
+                      >Улица
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="street"
+                      id="street"
+                      placeholder="Улица"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="house"
+                      >Дом / строение
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="house"
+                      id="house"
+                      placeholder="Дом"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label class="input__label" for="index"
+                      >Почтовый индекс
+                      <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1.875V10.125"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 3.75L9.75 8.25"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M2.25 8.25L9.75 3.75"
+                          stroke="#DE074B"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </label>
+                    <input
+                      class="input"
+                      type="text"
+                      name="index"
+                      id="index"
+                      placeholder="- - - - - -"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4>Способ оплаты</h4>
+              <div class="placing__btns">
+                <button class="placing-btn">
+                  <div class="placing-btn__title">Оплатить онлайн</div>
+                </button>
+                <button class="placing-btn">
+                  <div class="placing-btn__title">При получении</div>
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <h4>Ваши пожелания</h4>
+              <div class="input-group">
+                <label class="input__label" for="note">Примечание</label>
+
+                <textarea
+                  class="textarea"
+                  type="text"
+                  name="note"
+                  id="note"
+                  placeholder="Примечание"
+                >
+                </textarea>
+              </div>
+            </div>
+          </div>
+          <div class="placing-order__col-2">
+            <div class="amount-card">
+              <h3 class="amount__title">Итого</h3>
+              <div class="preview-product-slider--mobile">
+                <div class="swiper swiper-preview">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <div class="product-card">
+                        <div class="product-card__img">
+                          <img
+                            class="product-img"
+                            src="images/products/prod-2.png"
+                            alt="гель"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-card">
+                        <div class="product-card__img">
+                          <img
+                            class="product-img"
+                            src="images/products/prod-2.png"
+                            alt="гель"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-card">
+                        <div class="product-card__img">
+                          <img
+                            class="product-img"
+                            src="images/products/prod-2.png"
+                            alt="гель"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="amount-card__header">
+                <p class="full-count">Товары (3)</p>
+                <div class="full-price price">1950 ₽</div>
+              </div>
+              <div class="amount__main">
+                <div class="amount__item">
+                  <div class="amount__item--name">
+                    Шампунь-кондиционер для всех типов волос
+                  </div>
+                  <div
+                    class="amount__item--price amount__item--price-gray price"
+                  >
+                    1650 ₽
+                  </div>
+                </div>
+                <div class="amount__item">
+                  <div class="amount__item--delivery">Доставка</div>
+                  <div class="amount__item--price price">400 ₽</div>
+                </div>
+              </div>
+
+              <div class="amount__footer">
+                <div class="total">
+                  <div>Итого</div>
+                  <div class="total-price price">2350 ₽</div>
+                </div>
+
+                <button class="btn btn-dark-green btn-uniq">
+                  Перейти к оплате
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.125 4.375V14.375C3.125 14.7065 3.2567 15.0245 3.49112 15.2589C3.72554 15.4933 4.04348 15.625 4.375 15.625H16.875C17.0408 15.625 17.1997 15.5592 17.3169 15.4419C17.4342 15.3247 17.5 15.1658 17.5 15V6.25C17.5 6.08424 17.4342 5.92527 17.3169 5.80806C17.1997 5.69085 17.0408 5.625 16.875 5.625H4.375C4.04348 5.625 3.72554 5.4933 3.49112 5.25888C3.2567 5.02446 3.125 4.70652 3.125 4.375ZM3.125 4.375C3.125 4.04348 3.2567 3.72554 3.49112 3.49112C3.72554 3.2567 4.04348 3.125 4.375 3.125H15"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14.0625 10.125C14.1661 10.125 14.25 10.2089 14.25 10.3125C14.25 10.4161 14.1661 10.5 14.0625 10.5C13.9589 10.5 13.875 10.4161 13.875 10.3125C13.875 10.2089 13.9589 10.125 14.0625 10.125Z"
+                      fill="#D4FF66"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="preview-product-slider">
+              <h3 class="preview-product-slider__title">товары</h3>
+              <div class="swiper swiper-preview">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img
+                          class="product-img"
+                          src="images/products/prod-2.png"
+                          alt="гель"
+                        />
+                      </div>
+
+                      <div class="product-card__labels">
+                        <div class="label label--greeen">
+                          Уход для тела
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="label-mobile label-mobile--green">
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__name">
+                          крем-мыло <br />
+                          для лица и тела
+                        </div>
+
+                        <div class="product-card__info">
+                          <div class="product-card__price">500₽</div>
+                          <div class="product-card__value">1 шт.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img
+                          class="product-img"
+                          src="images/products/prod-2.png"
+                          alt="гель"
+                        />
+                      </div>
+
+                      <div class="product-card__labels">
+                        <div class="label label--greeen">
+                          Уход для тела
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="label-mobile label-mobile--green">
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__name">
+                          крем-мыло <br />
+                          для лица и тела
+                        </div>
+
+                        <div class="product-card__info">
+                          <div class="product-card__price">500₽</div>
+                          <div class="product-card__value">1 шт.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-card__img">
+                        <img
+                          class="product-img"
+                          src="images/products/prod-2.png"
+                          alt="гель"
+                        />
+                      </div>
+
+                      <div class="product-card__labels">
+                        <div class="label label--greeen">
+                          Уход для тела
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        <div class="label-mobile label-mobile--green">
+                          <svg
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_2054_2606)">
+                              <path
+                                d="M12.9375 7.30625V6.6875C12.9375 6.09076 12.7004 5.51847 12.2785 5.09651C11.8565 4.67455 11.2842 4.4375 10.6875 4.4375H9.5625V2.75H11.8125C11.9617 2.75 12.1048 2.80926 12.2102 2.91475C12.3157 3.02024 12.375 3.16332 12.375 3.3125C12.375 3.46168 12.4343 3.60476 12.5398 3.71025C12.6452 3.81574 12.7883 3.875 12.9375 3.875C13.0867 3.875 13.2298 3.81574 13.3352 3.71025C13.4407 3.60476 13.5 3.46168 13.5 3.3125C13.5 2.86495 13.3222 2.43572 13.0057 2.11926C12.6893 1.80279 12.2601 1.625 11.8125 1.625H7.3125C7.16332 1.625 7.02024 1.68426 6.91475 1.78975C6.80926 1.89524 6.75 2.03832 6.75 2.1875C6.75 2.33668 6.80926 2.47976 6.91475 2.58525C7.02024 2.69074 7.16332 2.75 7.3125 2.75H8.4375V4.4375H7.3125C6.71576 4.4375 6.14347 4.67455 5.72151 5.09651C5.29955 5.51847 5.0625 6.09076 5.0625 6.6875V7.30625C4.42766 7.43678 3.85723 7.7822 3.44737 8.28427C3.03751 8.78635 2.81329 9.41438 2.8125 10.0625V15.6875C2.8125 15.9859 2.93103 16.272 3.142 16.483C3.35298 16.694 3.63913 16.8125 3.9375 16.8125H14.0625C14.3609 16.8125 14.647 16.694 14.858 16.483C15.069 16.272 15.1875 15.9859 15.1875 15.6875V10.0625C15.1867 9.41438 14.9625 8.78635 14.5526 8.28427C14.1428 7.7822 13.5723 7.43678 12.9375 7.30625ZM7.3125 5.5625H10.6875C10.9859 5.5625 11.272 5.68103 11.483 5.89201C11.694 6.10298 11.8125 6.38913 11.8125 6.6875V7.25H6.1875V6.6875C6.1875 6.38913 6.30603 6.10298 6.51701 5.89201C6.72798 5.68103 7.01413 5.5625 7.3125 5.5625Z"
+                                fill="currentColor"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2054_2606">
+                                <rect
+                                  width="18"
+                                  height="18"
+                                  fill="white"
+                                  transform="translate(0 0.5)"
+                                />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="product-card__text">
+                        <div class="product-card__name">
+                          крем-мыло <br />
+                          для лица и тела
+                        </div>
+
+                        <div class="product-card__info">
+                          <div class="product-card__price">500₽</div>
+                          <div class="product-card__value">1 шт.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact container">
+        <div class="contact-card contact-card__annotation">
+          <div class="contact-card__title contact-card--on-dark">
+            ОТВЕТИМ На ваши вопросы
+          </div>
+          <div class="contact-card__subtitle contact-card--on-dark">
+            Не нашли нужной информации или хотите уточнить детали? Напишите нам
+            — мы с радостью поможем.
+          </div>
+        </div>
+
+        <div class="contact-card contact-card__contacts">
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              +7(951)234-44-80
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              Телефон
+            </div>
+          </div>
+
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              mail@zhd-chel.ru
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              E-mail
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <div class=".footer-menu copyright">
+        <div class="copyright-date">© 2025</div>
+        <div>Живое дерево</div>
+      </div>
+      <ul class="footer-menu menu-first">
+        <li class="footer-menu__title">Информация</li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Конфиденциальность</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Документы</a>
+        </li>
+        <li class="footer-menu__item"><a class="link" href="#">Контакты</a></li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Контакты</li>
+        <li class="footer-menu__item">
+          <div class="footer-menu__item--contacts">
+            <a class="link" href="#">VlasovAA@list.ru</a>
+            <a class="link" href="#">+7(951)234-44-80</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Реквизиты</li>
+        <li class="footer-menu__item">ИП Власов Андрей Александрович</li>
+        <li class="footer-menu__item">ИНН/КПП: 744700520166</li>
+      </ul>
+    </footer>
+  </body>
+</html>

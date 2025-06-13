@@ -1,0 +1,13 @@
+.result-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.result-message__description {
+  margin-bottom: 96px;
+}
+@media (max-width: 1024px) {
+  .result-message__description {
+    margin-bottom: 54px;
+  }
+}

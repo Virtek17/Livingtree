@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="swiper.js" defer></script>
+    <script src="tabs.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="input.js" defer></script>
+    <title>Аккаунт</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-container">
+        <a class="link--green" href="index.html" class="logo"
+          ><img class="logo-img" src="images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul class="header-menu">
+          <li>
+            <a class="btn btn-standard btn-s" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="btn btn-standard btn-s" href="#">Доставка и оплата</a>
+          </li>
+          <li><a class="btn btn-standard btn-s" href="#">Контакты</a></li>
+          <li>
+            <a class="btn btn-green btn-s" href="#">+7(951)234-44-80</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="header__btn">
+          <img src="images/icons/Account.svg" alt="profile" />
+        </button>
+        <button class="header__btn">
+          <img src="images/icons/Cart.svg" alt="cart" />
+        </button>
+      </div>
+      <div class="burger-btn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section container">
+        <div class="bread-crumbs">Главная / Аккаунт</div>
+        <div class="profile-header">
+          <h2>Аккаунт</h2>
+          <button class="btn-out--mobile">
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2354_2882)">
+                <path
+                  d="M8.75 3.625H3.75V17.375H8.75"
+                  stroke="#03011A"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M8.75 10.5H17.5"
+                  stroke="#03011A"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M14.375 7.375L17.5 10.5L14.375 13.625"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2354_2882">
+                  <rect
+                    width="20"
+                    height="20"
+                    fill="white"
+                    transform="translate(0 0.5)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+
+        <div class="profile-block" data-tabs>
+          <div class="tabs profile-block__tabs" data-list>
+            <button class="tab__item tab__item--active" data-target="tab1">
+              Профиль
+            </button>
+            <button class="tab__item" data-target="tab2">Заказы</button>
+            <button class="tab__item" data-target="tab3">Адреса</button>
+
+            <button class="btn btn-uniq btn-standard btn-out">
+              Выйти
+              <svg
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_2354_2882)">
+                  <path
+                    d="M8.75 3.625H3.75V17.375H8.75"
+                    stroke="#03011A"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M8.75 10.5H17.5"
+                    stroke="#03011A"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.375 7.375L17.5 10.5L14.375 13.625"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_2354_2882">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div class="tabs__container" data-tab="tab1">
+            <h4>Личные данные</h4>
+            <div class="inputs-group__4">
+              <div class="input-group">
+                <label class="input__label" for="name"
+                  >Имя
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Имя"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="lastName"
+                  >Фамилия
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Фамилия"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="email"
+                  >E-mail
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="adress@example.com"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="phone"
+                  >Телефон
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input phone-input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="+7(___)___-__-__"
+                />
+              </div>
+              <button class="btn btn-uniq btn-dark-green btn-save__profile">
+                Сохранить изменения
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2356_4766)">
+                    <path
+                      d="M3.25 11.25L7.625 15.625L17.625 5.625"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2356_4766">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.125)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+
+            <a class="link--red underline" href="#">Удалить аккаунт</a>
+          </div>
+          <div class="tabs__container" data-tab="tab2">
+            <div data-tabs>
+              <div class="tabs tabs-del" data-list>
+                <button
+                  class="tabs__button tab__item tab__item--active"
+                  data-target="nested-tab1"
+                >
+                  Все заказы
+                </button>
+                <button
+                  class="tabs__button tab__item"
+                  data-target="nested-tab2"
+                >
+                  Активные
+                </button>
+                <button
+                  class="tabs__button tab__item"
+                  data-target="nested-tab3"
+                >
+                  Завершенные
+                </button>
+              </div>
+              <div class="tabs__container" data-tab="nested-tab1">
+                <div class="order-banner--mobile">
+                  <div class="order-banner__header">
+                    <div class="order-banner__header--info">
+                      <div class="order-banner__title">Заказ №100428</div>
+                      <div class="order-banner__date">18 мая 17:05</div>
+                    </div>
+                    <div class="label-txt label--yellow">В обработке</div>
+                  </div>
+                  <div class="order-banner__main">
+                    <div class="order-product-slider">
+                      <div class="swiper swiper-order-banner__profile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-banner__footer">
+                    <div>К оплате</div>
+                    <div>2350 ₽</div>
+                  </div>
+                </div>
+                <div class="order-banner--mobile">
+                  <div class="order-banner__header">
+                    <div class="order-banner__header--info">
+                      <div class="order-banner__title">Заказ №100428</div>
+                      <div class="order-banner__date">18 мая 17:05</div>
+                    </div>
+                    <div class="label-txt label--red">Отменен</div>
+                  </div>
+                  <div class="order-banner__main">
+                    <div class="order-product-slider">
+                      <div class="swiper swiper-order-banner__profile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-banner__footer">
+                    <div>К оплате</div>
+                    <div>2350 ₽</div>
+                  </div>
+                </div>
+                <div class="order-banner--mobile">
+                  <div class="order-banner__header">
+                    <div class="order-banner__header--info">
+                      <div class="order-banner__title">Заказ №100428</div>
+                      <div class="order-banner__date">18 мая 17:05</div>
+                    </div>
+                    <div class="label-txt label--yellow">В обработке</div>
+                  </div>
+                  <div class="order-banner__main">
+                    <div class="order-product-slider">
+                      <div class="swiper swiper-order-banner__profile">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="product-card">
+                              <div class="product-card__img">
+                                <img
+                                  class="product-img"
+                                  src="images/products/prod-2.png"
+                                  alt="гель"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="order-banner__footer">
+                    <div>К оплате</div>
+                    <div>2350 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__container" data-tab="nested-tab2">
+                список активных заказов
+              </div>
+              <div class="tabs__container" data-tab="nested-tab3">
+                список Завершенные заказов
+              </div>
+            </div>
+          </div>
+          <div class="tabs__container" data-tab="tab3">
+            <h4>Адреса</h4>
+            <div class="inputs-group__4">
+              <div class="input-group">
+                <label class="input__label" for="country"
+                  >Страна
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder="Россия"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="region"
+                  >Регион / область
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="region"
+                  id="region"
+                  placeholder="Выбрать из списка"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="city"
+                  >Город/населённый пункт
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Выбрать из списка"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="street"
+                  >Улица
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="street"
+                  id="street"
+                  placeholder="Улица"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="house"
+                  >Дом / строение
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="house"
+                  id="house"
+                  placeholder="Дом"
+                />
+              </div>
+              <div class="input-group">
+                <label class="input__label" for="index"
+                  >Почтовый индекс
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 1.875V10.125"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 3.75L9.75 8.25"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2.25 8.25L9.75 3.75"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <input
+                  class="input"
+                  type="text"
+                  name="index"
+                  id="index"
+                  placeholder="- - - - - -"
+                />
+              </div>
+              <button class="btn btn-uniq btn-dark-green btn-save__profile">
+                Сохранить адрес
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2356_4766)">
+                    <path
+                      d="M3.25 11.25L7.625 15.625L17.625 5.625"
+                      stroke="#D4FF66"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2356_4766">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.125)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact container">
+        <div class="contact-card contact-card__annotation">
+          <div class="contact-card__title contact-card--on-dark">
+            ОТВЕТИМ На ваши вопросы
+          </div>
+          <div class="contact-card__subtitle contact-card--on-dark">
+            Не нашли нужной информации или хотите уточнить детали? Напишите нам
+            — мы с радостью поможем.
+          </div>
+        </div>
+
+        <div class="contact-card contact-card__contacts">
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              +7(951)234-44-80
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              Телефон
+            </div>
+          </div>
+
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              mail@zhd-chel.ru
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              E-mail
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class=".footer-menu copyright">
+        <div class="copyright-date">© 2025</div>
+        <div>Живое дерево</div>
+      </div>
+      <ul class="footer-menu menu-first">
+        <li class="footer-menu__title">Информация</li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Конфиденциальность</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Документы</a>
+        </li>
+        <li class="footer-menu__item"><a class="link" href="#">Контакты</a></li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Контакты</li>
+        <li class="footer-menu__item">
+          <div class="footer-menu__item--contacts">
+            <a class="link" href="#">VlasovAA@list.ru</a>
+            <a class="link" href="#">+7(951)234-44-80</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Реквизиты</li>
+        <li class="footer-menu__item">ИП Власов Андрей Александрович</li>
+        <li class="footer-menu__item">ИНН/КПП: 744700520166</li>
+      </ul>
+    </footer>
+  </body>
+</html>

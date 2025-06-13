@@ -1,0 +1,144 @@
+.profile-block {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  min-height: 821px;
+}
+.profile-block__tabs {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tabs__container {
+  grid-area: 1 / 7 / 2 /13;
+}
+.btn-save__profile {
+  grid-column: span 3;
+  margin: 24px 0px 48px;
+}
+.profile-block__tabs .btn {
+  /* margin-top: 621px; */
+  margin-top: auto;
+}
+.underline {
+  text-decoration: underline;
+}
+
+.tabs__container .order-banner--mobile {
+  display: block;
+}
+
+.btn-out--mobile {
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-bg-2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Удаление профиля */
+.delet-profile {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+}
+.delet-profile .result-message {
+  grid-column: span 6;
+}
+.delet-profile .result-message__description {
+  margin-bottom: 48px;
+}
+.delet-profile .input-group {
+  grid-column: span 4;
+  grid-area: 2 / 1 / 3 / 5;
+}
+.delet-profile .btn-row {
+  margin-top: 96px;
+  grid-area: 3 / 1 / 4 / 5;
+
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .profile-block .product-img {
+    width: 100%;
+  }
+  .tabs__container {
+    grid-area: 1 / 6 / 2 /13;
+  }
+  .delet-profile .input-group {
+    grid-area: 2 / 1 / 3 / 7;
+  }
+  .delet-profile .btn-row {
+    grid-area: 3 / 1 / 4 / 7;
+  }
+}
+@media (max-width: 998px) {
+  .delet-profile {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+  }
+  .delet-profile .result-message {
+    grid-column: span 5;
+  }
+  .delet-profile .result-message__description {
+    margin-bottom: 44px;
+  }
+  .delet-profile .input-group {
+    grid-area: 2 / 1 / 3 / 5;
+  }
+  .delet-profile .btn-row {
+    margin-top: 44px;
+    grid-area: 3 / 1 / 4 / 5;
+
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .profile-block {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+    grid-auto-rows: max-content;
+  }
+  .tabs__container {
+    grid-area: 2 / 1 / 3 /9;
+  }
+  .profile-block__tabs {
+    flex-direction: row;
+  }
+  .btn-out {
+    display: none;
+  }
+  .btn-out--mobile {
+    display: flex;
+  }
+  .btn-save__profile {
+    grid-area: 1 / 7 / 2 / 9;
+  }
+  .tabs-del {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .delet-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  .delet-profile .result-message__description {
+    margin-bottom: 36px;
+  }
+  .delet-profile .btn-row {
+    margin-top: 268px;
+  }
+}

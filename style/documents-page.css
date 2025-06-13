@@ -1,0 +1,46 @@
+.download-links {
+  display: flex;
+  flex-direction: column;
+}
+.download-links li {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 1280px) {
+  .download-links {
+    font-size: 14px;
+  }
+  .download-links svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .download-links {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .download-links li {
+    margin-bottom: 18px;
+  }
+  .download-links {
+    font-size: 12px;
+  }
+  .download-links svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.privacy li > ul > li > p {
+  margin-bottom: 0;
+}
+
+.privacy li > ul > li {
+  list-style-type: disc;
+}
+
+.privacy li > ul > li::marker {
+  margin-left: 20px;
+}

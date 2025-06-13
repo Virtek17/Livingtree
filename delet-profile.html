@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-container">
+        <a class="link--green" href="index.html" class="logo"
+          ><img class="logo-img" src="images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul class="header-menu">
+          <li>
+            <a class="btn btn-standard btn-s" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="btn btn-standard btn-s" href="#">Доставка и оплата</a>
+          </li>
+          <li><a class="btn btn-standard btn-s" href="#">Контакты</a></li>
+          <li>
+            <a class="btn btn-green btn-s" href="#">+7(951)234-44-80</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="header__btn">
+          <img src="images/icons/Account.svg" alt="profile" />
+        </button>
+        <button class="header__btn">
+          <img src="images/icons/Cart.svg" alt="cart" />
+        </button>
+      </div>
+      <div class="burger-btn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section container">
+        <div class="delet-profile">
+          <div class="result-message">
+            <h2>Удалить аккаунт?</h2>
+            <div class="result-message__description">
+              <p>
+                Удаление аккаунта — безвозвратный шаг. На ваш номер телефона был
+                отправлен код подтверждения. После подтверждения ваша история
+                заказов и личные данные будут удалены.
+              </p>
+            </div>
+          </div>
+          <div class="input-group">
+            <label class="input__label" for="code"
+              >Код из сообщения
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 1.875V10.125"
+                  stroke="#DE074B"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25 3.75L9.75 8.25"
+                  stroke="#DE074B"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M2.25 8.25L9.75 3.75"
+                  stroke="#DE074B"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+            <input
+              class="input"
+              type="text"
+              name="code"
+              id="code"
+              placeholder="- - - -"
+            />
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-standard btn-uniq">Отмена</button>
+            <button class="btn btn-err btn-uniq">Удалить аккаунт</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact container">
+        <div class="contact-card contact-card__annotation">
+          <div class="contact-card__title contact-card--on-dark">
+            ОТВЕТИМ На ваши вопросы
+          </div>
+          <div class="contact-card__subtitle contact-card--on-dark">
+            Не нашли нужной информации или хотите уточнить детали? Напишите нам
+            — мы с радостью поможем.
+          </div>
+        </div>
+
+        <div class="contact-card contact-card__contacts">
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              +7(951)234-44-80
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              Телефон
+            </div>
+          </div>
+
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              mail@zhd-chel.ru
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              E-mail
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class=".footer-menu copyright">
+        <div class="copyright-date">© 2025</div>
+        <div>Живое дерево</div>
+      </div>
+      <ul class="footer-menu menu-first">
+        <li class="footer-menu__title">Информация</li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Пользовательское соглашение</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Конфиденциальность</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="#">Документы</a>
+        </li>
+        <li class="footer-menu__item"><a class="link" href="#">Контакты</a></li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Контакты</li>
+        <li class="footer-menu__item">
+          <div class="footer-menu__item--contacts">
+            <a class="link" href="#">VlasovAA@list.ru</a>
+            <a class="link" href="#">+7(951)234-44-80</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Реквизиты</li>
+        <li class="footer-menu__item">ИП Власов Андрей Александрович</li>
+        <li class="footer-menu__item">ИНН/КПП: 744700520166</li>
+      </ul>
+    </footer>
+  </body>
+</html>

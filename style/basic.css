@@ -1,0 +1,91 @@
+* {
+  line-height: 98%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Manrope;
+  color: var(--color-txt);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 24;
+  font-weight: 700;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Для заголоков на странице (для h2) */
+.title {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.btn {
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Лейблы */
+.labels {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 25px;
+  padding: 6px 12px;
+}
+.label-txt {
+  border-radius: 25px;
+  padding: 6px 12px;
+}
+.label svg {
+  width: 18px;
+  height: 18px;
+}
+/* Лейбл мобилка */
+.label--mobile {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+.label--mobile svg {
+  width: 14px;
+  height: 14px;
+}
+/* Лейбл состояния */
+.label--succes {
+  background-color: var(--color-bg-3);
+  color: var(--color-primary);
+}
+.label--warn {
+  background-color: var(--color-warn);
+  color: var(--color-warn-txt);
+}
+.label--err {
+  background-color: var(--color-err-bg);
+  color: var(--color-err-txt);
+}
+
+.price {
+  text-wrap: nowrap;
+}

@@ -62,21 +62,7 @@
 .product-detail .tabs {
   margin-bottom: 16px;
 }
-.tab-content {
-  display: none;
-}
 
-.tab-content:target {
-  display: block;
-}
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
 /* 
  'mobile': 375, 
  'mobile-xl': 480, 

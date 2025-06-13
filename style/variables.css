@@ -2,6 +2,7 @@
   --color-primary: #059e82;
   --color-accent: #d4ff66;
   --color-txt: #030118;
+  --color-txt-2: #e3e3e3;
   --color-txt-3: #b6b6b6;
   --color-warn-txt: #dea107;
   --color-err-txt: #de074b;
@@ -19,6 +20,8 @@
 
   --color-link--hover: #d3d3d3;
   --color-link: var(--color-txt);
+  --color-link-green: var(--color-primary);
+  --color-link-green--hover: var(--color-primary-hover);
 }
 /* 
  'mobile': 375, 

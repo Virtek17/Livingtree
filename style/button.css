@@ -1,6 +1,6 @@
 @import url("/style/button.css");
 
-/* Общие х-ки кнопко */
+/* Общие х-ки кнопок */
 .btn {
   border-radius: 50px;
   display: inline-flex;
@@ -11,6 +11,12 @@
   text-wrap: nowrap;
   font-size: 18px;
   line-height: 98%;
+}
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
 /* Серая кнопка в меню */
@@ -39,6 +45,16 @@
   background-color: var(--color-primary-hover);
 }
 
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border: none;
+}
+
+.btn-err {
+  background-color: var(--color-err-bg);
+  color: var(--color-err-txt);
+}
 /* Кнопки в меню */
 .btn-s {
   padding: 12px 24px;
@@ -57,6 +73,10 @@
 .btn-uniq {
   padding: 24px 0px;
   width: 100%;
+}
+
+.btn-null {
+  padding: 24px 0px;
 }
 @media (max-width: 1200px) {
 }

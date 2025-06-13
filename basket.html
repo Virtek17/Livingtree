@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style/index.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-container">
+        <a class="link--green" href="index.html" class="logo"
+          ><img class="logo-img" src="images/logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav class="navigation">
+        <ul class="header-menu">
+          <li>
+            <a class="btn btn-standard btn-s" href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <a class="btn btn-standard btn-s" href="#">Доставка и оплата</a>
+          </li>
+          <li><a class="btn btn-standard btn-s" href="#">Контакты</a></li>
+          <li>
+            <a class="btn btn-green btn-s" href="#">+7(951)234-44-80</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button class="header__btn">
+          <img src="images/icons/Account.svg" alt="profile" />
+        </button>
+        <button class="header__btn">
+          <img src="images/icons/Cart.svg" alt="cart" />
+        </button>
+      </div>
+      <div class="burger-btn">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section container">
+        <h2>Корзина</h2>
+        <!--  -->
+        <div class="basket-page">
+          <div class="basket-page__products">
+            <div class="basket-page__product product-basket">
+              <div class="product-basket__image">
+                <img src="images/products/prod-1.png" alt="" />
+              </div>
+
+              <div class="product-basket__main">
+                <div class="product-basket__info">
+                  <h4 class="product-basket__name">
+                    Шампунь-кондиционер для всех типов волос
+                  </h4>
+                  <div
+                    class="product-basket__price product-basket__price--mobile"
+                  >
+                    <div class="product-basket__price--current price">
+                      650 ₽
+                    </div>
+                    <div class="product-basket__price--old price">1650 ₽</div>
+                  </div>
+                  <div class="product-basket__value">250 мл</div>
+                </div>
+
+                <div class="product-basket__buttons">
+                  <div class="counter">
+                    <button class="counter__btn counter__btn--disabled">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_488_10078)">
+                          <path
+                            d="M3.4375 11H18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_488_10078">
+                            <rect width="22" height="22" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <p>1</p>
+                    <button class="counter__btn counter__btn--plus">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_488_10082)">
+                          <path
+                            d="M3.4375 11H18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11 3.4375V18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_488_10082">
+                            <rect width="22" height="22" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="btn-delete btn-delete--mobile">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.5 3.5H2.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.5 6.5V10.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.5 6.5V10.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-basket__dop-info">
+                <div class="product-basket__price">
+                  <div class="product-basket__price--old price price">
+                    1650 ₽
+                  </div>
+                  <div class="product-basket__price--current price price">
+                    650 ₽
+                  </div>
+                </div>
+
+                <button class="btn-delete">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5 3.5H2.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.5 6.5V10.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.5 6.5V10.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="basket-page__product product-basket">
+              <div class="product-basket__image">
+                <img src="images/products/prod-1.png" alt="" />
+              </div>
+
+              <div class="product-basket__main">
+                <div class="product-basket__info">
+                  <h4 class="product-basket__name">
+                    Шампунь-кондиционер для всех типов волос
+                  </h4>
+                  <div
+                    class="product-basket__price product-basket__price--mobile"
+                  >
+                    <div class="product-basket__price--current price">
+                      650 ₽
+                    </div>
+                    <div class="product-basket__price--old price">1650 ₽</div>
+                  </div>
+                  <div class="product-basket__value">250 мл</div>
+                </div>
+
+                <div class="product-basket__buttons">
+                  <div class="counter">
+                    <button class="counter__btn counter__btn--disabled">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_488_10078)">
+                          <path
+                            d="M3.4375 11H18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_488_10078">
+                            <rect width="22" height="22" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <p>1</p>
+                    <button class="counter__btn counter__btn--plus">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_488_10082)">
+                          <path
+                            d="M3.4375 11H18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11 3.4375V18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_488_10082">
+                            <rect width="22" height="22" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="btn-delete btn-delete--mobile">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.5 3.5H2.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.5 6.5V10.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.5 6.5V10.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-basket__dop-info">
+                <div class="product-basket__price">
+                  <div class="product-basket__price--old price price">
+                    1650 ₽
+                  </div>
+                  <div class="product-basket__price--current price price">
+                    650 ₽
+                  </div>
+                </div>
+
+                <button class="btn-delete">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5 3.5H2.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.5 6.5V10.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.5 6.5V10.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!--  -->
+            <div class="basket-page__product product-basket">
+              <div class="product-basket__image">
+                <img src="images/products/prod-1.png" alt="" />
+              </div>
+
+              <div class="product-basket__main">
+                <div class="product-basket__info">
+                  <h4 class="product-basket__name">
+                    Шампунь-кондиционер для всех типов волос
+                  </h4>
+                  <div
+                    class="product-basket__price product-basket__price--mobile"
+                  >
+                    <div class="product-basket__price--current price">
+                      650 ₽
+                    </div>
+                    <div class="product-basket__price--old price">1650 ₽</div>
+                  </div>
+                  <div class="product-basket__value">250 мл</div>
+                </div>
+
+                <div class="product-basket__buttons">
+                  <div class="counter">
+                    <button class="counter__btn counter__btn--disabled">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_488_10078)">
+                          <path
+                            d="M3.4375 11H18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_488_10078">
+                            <rect width="22" height="22" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <p>1</p>
+                    <button class="counter__btn counter__btn--plus">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_488_10082)">
+                          <path
+                            d="M3.4375 11H18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11 3.4375V18.5625"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_488_10082">
+                            <rect width="22" height="22" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                  <button class="btn-delete btn-delete--mobile">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.5 3.5H2.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.5 6.5V10.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.5 6.5V10.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5"
+                        stroke="#DE074B"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-basket__dop-info">
+                <div class="product-basket__price">
+                  <div class="product-basket__price--old price price">
+                    1650 ₽
+                  </div>
+                  <div class="product-basket__price--current price price">
+                    650 ₽
+                  </div>
+                </div>
+
+                <button class="btn-delete">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5 3.5H2.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.5 6.5V10.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M9.5 6.5V10.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.5 3.5V13C12.5 13.1326 12.4473 13.2598 12.3536 13.3536C12.2598 13.4473 12.1326 13.5 12 13.5H4C3.86739 13.5 3.74021 13.4473 3.64645 13.3536C3.55268 13.2598 3.5 13.1326 3.5 13V3.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10.5 3.5V2.5C10.5 2.23478 10.3946 1.98043 10.2071 1.79289C10.0196 1.60536 9.76522 1.5 9.5 1.5H6.5C6.23478 1.5 5.98043 1.60536 5.79289 1.79289C5.60536 1.98043 5.5 2.23478 5.5 2.5V3.5"
+                      stroke="#DE074B"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="basket-page__amount-card amount-card">
+            <h3 class="amount__title">промежуточная сумма заказа</h3>
+            <div class="amount-card__header">
+              <div class="full-count">Товары (3)</div>
+              <div class="full-price price">4950 ₽</div>
+            </div>
+            <div class="amount__main">
+              <div class="amount__item">
+                <div class="amount__item--name">
+                  Шампунь-кондиционер для всех типов волос
+                </div>
+                <div class="amount__product--price price">1650 ₽</div>
+              </div>
+
+              <div class="amount__item">
+                <div class="amount__item--name">
+                  Шампунь-кондиционер для всех типов волос
+                </div>
+                <div class="amount__product--price price">1650 ₽</div>
+              </div>
+              <div class="amount__item">
+                <div class="amount__item--name">
+                  Шампунь-кондиционер для всех типов волос
+                </div>
+                <div class="amount__product--price price">1650 ₽</div>
+              </div>
+              <div class="amount__discount">
+                <p class="discount">Скидка</p>
+                <p class="discount-size">-3000 ₽</p>
+              </div>
+            </div>
+            <div class="amount__footer">
+              <div class="total">
+                <div>итого</div>
+                <div class="total-price price">1950 ₽</div>
+              </div>
+
+              <div class="note">
+                <svg
+                  width="28"
+                  height="29"
+                  viewBox="0 0 28 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 25C19.799 25 24.5 20.299 24.5 14.5C24.5 8.70101 19.799 4 14 4C8.20101 4 3.5 8.70101 3.5 14.5C3.5 20.299 8.20101 25 14 25Z"
+                    stroke="#B6B6B6"
+                    stroke-width="1.5"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M14 15.375V9.25"
+                    stroke="#B6B6B6"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14 20.625C14.7249 20.625 15.3125 20.0374 15.3125 19.3125C15.3125 18.5876 14.7249 18 14 18C13.2751 18 12.6875 18.5876 12.6875 19.3125C12.6875 20.0374 13.2751 20.625 14 20.625Z"
+                    fill="#B6B6B6"
+                  />
+                </svg>
+                <p>Рассчет доставки осуществляется на этапе оформления</p>
+              </div>
+              <button class="btn btn-dark-green btn-uniq">
+                К оформлению
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M43.6875 12.9199L26.5 3.51563C26.0408 3.26188 25.5247 3.12878 25 3.12878C24.4753 3.12878 23.9592 3.26188 23.5 3.51563L6.3125 12.9238C5.82166 13.1924 5.41192 13.5878 5.12608 14.0688C4.84023 14.5498 4.68877 15.0987 4.6875 15.6582V34.3379C4.68877 34.8974 4.84023 35.4463 5.12608 35.9273C5.41192 36.4083 5.82166 36.8037 6.3125 37.0723L23.5 46.4805C23.9592 46.7342 24.4753 46.8673 25 46.8673C25.5247 46.8673 26.0408 46.7342 26.5 46.4805L43.6875 37.0723C44.1783 36.8037 44.5881 36.4083 44.8739 35.9273C45.1598 35.4463 45.3112 34.8974 45.3125 34.3379V15.6602C45.3123 15.0997 45.1613 14.5495 44.8754 14.0674C44.5895 13.5853 44.1792 13.189 43.6875 12.9199ZM25 6.25L40.6914 14.8438L34.877 18.0273L19.1836 9.43359L25 6.25ZM25 23.4375L9.30859 14.8438L15.9297 11.2188L31.6211 19.8125L25 23.4375ZM7.8125 17.5781L23.4375 26.1289V42.8848L7.8125 34.3398V17.5781ZM42.1875 34.332L26.5625 42.8848V26.1367L32.8125 22.7168V29.6875C32.8125 30.1019 32.9771 30.4993 33.2701 30.7924C33.5632 31.0854 33.9606 31.25 34.375 31.25C34.7894 31.25 35.1868 31.0854 35.4799 30.7924C35.7729 30.4993 35.9375 30.1019 35.9375 29.6875V21.0059L42.1875 17.5781V34.3301V34.332Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section section-contact container">
+        <div class="contact-card contact-card__annotation">
+          <div class="contact-card__title contact-card--on-dark">
+            ОТВЕТИМ На ваши вопросы
+          </div>
+          <div class="contact-card__subtitle contact-card--on-dark">
+            Не нашли нужной информации или хотите уточнить детали? Напишите нам
+            — мы с радостью поможем.
+          </div>
+        </div>
+
+        <div class="contact-card contact-card__contacts">
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              +7(951)234-44-80
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              Телефон
+            </div>
+          </div>
+
+          <div class="contact-card__contact">
+            <div class="contact-card__title contact-card--on-light">
+              mail@zhd-chel.ru
+            </div>
+            <div class="contact-card__subtitle contact-card__subtitle--accent">
+              E-mail
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class=".footer-menu copyright">
+        <div class="copyright-date">© 2025</div>
+        <div>Живое дерево</div>
+      </div>
+      <ul class="footer-menu menu-first">
+        <li class="footer-menu__title">Информация</li>
+        <li class="footer-menu__item">
+          <a class="link" href="documents/Документ.pdf" download
+            >Пользовательское соглашение</a
+          >
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="documents/Документ.pdf" download
+            >Конфиденциальность</a
+          >
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="documents/Документ.pdf" download>Документы</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="link" href="documents/Документ.pdf" download>Контакты</a>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Контакты</li>
+        <li class="footer-menu__item">
+          <div class="footer-menu__item--contacts">
+            <a class="link" href="documents/Документ.pdf" download
+              >VlasovAA@list.ru</a
+            >
+            <a class="link" href="documents/Документ.pdf" download
+              >+7(951)234-44-80</a
+            >
+          </div>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li class="footer-menu__title">Реквизиты</li>
+        <li class="footer-menu__item">ИП Власов Андрей Александрович</li>
+        <li class="footer-menu__item">ИНН/КПП: 744700520166</li>
+      </ul>
+    </footer>
+  </body>
+</html>
