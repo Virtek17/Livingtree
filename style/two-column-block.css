@@ -1,7 +1,19 @@
+/* Для главно экрана */
+.section-natural-cosmetics__content {
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+}
+
 .two-column-block {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
+}
+
+.two-column-block__col-1 h3 svg {
+  width: 50px;
+  height: 50px;
 }
 
 .two-column-block__content {
@@ -22,6 +34,7 @@
 .two-column-block svg {
   color: var(--color-primary);
 }
+
 .two-column-block__icon--mobile {
   display: none;
 }
@@ -71,13 +84,27 @@
   .two-column-block__col-2 {
     grid-area: 1 / 8 / 2 / 13;
   }
+  .two-column-block__documets .two-column-block__col-2 {
+    grid-area: 1 / 9 / 2 / 13;
+  }
+  .two-column-block__documets .two-column-block__col-1 {
+    grid-area: 1 / 1 / 2 / 7;
+  }
   h3 {
     font-size: 28px;
   }
-
-  h3 svg {
+  .two-column-block__col-1 h3 svg {
     width: 28px;
     height: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .two-column-block__content {
+    gap: 44px;
+  }
+  .section-natural-cosmetics__content {
+    gap: 44px;
   }
 }
 

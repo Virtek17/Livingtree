@@ -9,6 +9,7 @@
 }
 
 .banner__btn {
+  width: 95%;
   position: absolute;
   bottom: 0px;
   left: 50%;
@@ -72,6 +73,6 @@
   }
   .banner-title {
     top: 440px;
-    padding: 0px 18px;
+    padding: 0px 9px;
   }
 }

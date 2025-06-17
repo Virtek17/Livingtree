@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/index.css" />
     <script src="https://unpkg.com/imask" defer></script>
-    <script src="input.js" defer></script>
     <script src="tabs.js" defer></script>
+    <script src="input.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -56,12 +56,15 @@
             адреса доставки.
           </p>
 
-          <div class="login-registration-form__main">
-            <div class="tabs">
-              <button class="tab__item tab__item--active">вход</button>
-              <button class="tab__item">регистрация</button>
+          <div class="login-registration-form__main" data-tabs>
+            <div class="tabs" data-list>
+              <button class="tab__item tab__item--active" data-target="tab11">
+                вход
+              </button>
+              <button class="tab__item" data-target="tab12">регистрация</button>
             </div>
-            <div class="tab-content tab-login show" id="content-1">
+
+            <div class="tab-content tab-login" data-tab="tab11">
               <div class="input-group">
                 <label class="input__label" for="phone"
                   >Телефон
@@ -191,7 +194,7 @@
               </button>
             </div>
 
-            <div class="tab-content tab-reg hide" id="content-2">
+            <div class="tab-content tab-reg" data-tab="tab12">
               <div class="input-group">
                 <label class="input__label" for="name"
                   >Имя

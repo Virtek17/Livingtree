@@ -67,6 +67,14 @@ class Tabs {
     console.log("keys => ", keys);
     for (let [key, button] of this.buttons.entries()) {
       button.setAttribute("aria-selected", key === name);
+
+      // Убираем класс у всех кнопок
+      button.classList.remove("tab__item--active");
+
+      // Добавляем класс только активной
+      if (key === name) {
+        button.classList.add("tab__item--active");
+      }
     }
 
     for (let [key, container] of this.containers.entries()) {

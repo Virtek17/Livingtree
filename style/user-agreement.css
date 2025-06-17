@@ -25,3 +25,11 @@
 ol {
   list-style: none;
 }
+@media (max-width: 1024px) {
+  .section-agreement {
+    display: block;
+  }
+  .section-agreement__content {
+    margin-bottom: 105px;
+  }
+}

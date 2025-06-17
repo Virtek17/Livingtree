@@ -11,6 +11,9 @@
   font-size: 16px;
   transition: all 0.2s ease-in;
 }
+.good {
+  background-color: var(--color-primary);
+}
 .lin-block:hover {
   box-shadow: #03011a 0px 0px 40px 2px;
   background-color: var(--color-bg-3);
@@ -224,6 +227,8 @@ button {
 }
 
 /* SECTION 2 */
+.section-natural-cosmetics {
+}
 .section-natural-cosmetics__content {
   display: flex;
   flex-direction: column;
@@ -280,9 +285,11 @@ button {
     font-size: 14px;
     font-weight: 400;
   }
+}
 
-  .section-natural-cosmetics__content {
-    gap: 44px;
+@media (max-width: 768px) {
+  .section-natural-cosmetics h2 {
+    display: none;
   }
 }
 
@@ -418,6 +425,7 @@ button {
 .advantages-mobile__icon {
   width: 32px;
   height: 32px;
+  color: var(--color-primary);
 }
 
 @media (max-width: 1200px) {
@@ -438,6 +446,11 @@ button {
   }
   .advantage--image {
     height: 212px;
+  }
+}
+@media (max-width: 768px) {
+  .advantages__col--img {
+    display: none;
   }
 }
 
@@ -470,12 +483,6 @@ button {
 .swiper-slide {
   flex-shrink: 0; /* Запрещаем сжатие слайдов */
   width: auto; /* Ширина слайда определяется его содержимым */
-}
-
-@media (max-width: 1200px) {
-  .section-products {
-    padding-left: 36px;
-  }
 }
 
 @media (max-width: 992px) {

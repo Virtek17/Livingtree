@@ -94,18 +94,18 @@
     grid-area: 2 / 1 / 3 / 2;
   }
 
-  .footer-menu {
-    /* max-width: 174px; */
-  }
   .menu-first {
     flex: 1 1 auto;
     width: 100%;
   }
-  .menu__title {
-    font-size: 18px;
+  .footer-menu__title {
+    font-size: 20px;
   }
-  .menu__item {
-    font-size: 12px;
+  .footer-menu__item {
+    font-size: 14px;
+  }
+  .copyright {
+    font-size: 14px;
   }
 }
 @media (max-width: 420px) {
@@ -114,5 +114,15 @@
     gap: 36px;
     flex-direction: column;
     padding-bottom: 36px;
+  }
+  .footer-menu__title {
+    font-size: 18px;
+  }
+  .footer-menu__item {
+    font-size: 12px;
+  }
+  .copyright {
+    font-size: 12px;
+    flex-direction: column;
   }
 }

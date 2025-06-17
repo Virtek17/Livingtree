@@ -57,6 +57,7 @@
   .metric-card__title {
     font-size: 40px;
     font-weight: 500;
+    margin-bottom: 0px;
   }
   .metric-card__subtitle {
     font-size: 12px;
